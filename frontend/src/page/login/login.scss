@@ -12,29 +12,37 @@
         background: white;
         display: flex;
         flex-direction: column;
-        border-radius: 5px;
+        border-radius: 10px;
+        gap: 12px;
 
-        gap: 8px;
+        h3 {
+            text-align: center;
+        }
+
+        .bot {
+            display: flex;
+            justify-content: space-between;
+        }
 
         label {
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            gap: 6px;
 
             input {
                 border: 1px solid #ddd;
                 padding: 10px 20px;
                 outline: none;
                 border-radius: 4px;
-
             }
         }
 
         button {
             padding: 8px 16px;
             border: 1px solid #ddd;
-            background: black;
+            background: blue;
             color: white;
+            border-radius: 5px;
         }
     }
 }
