@@ -21,22 +21,24 @@
         border: 1px solid #ddd;
         border-radius: 5px;
         padding: 40px;
-        background: black;
+        background: #fff;
     }
 
     label {
         display: flex;
         flex-direction: column;
-        gap: 2px;
+        gap: 5px;
 
         span {
-            color: white;
+            color: #000;
+            font-size: 14px;
         }
 
         input {
             padding: 10px 20px;
             border: 1px solid #ddd;
             outline: none;
+            border-radius: 6px;
         }
 
         select,
@@ -44,15 +46,14 @@
             padding: 10px 20px;
             border: 1px solid #ddd;
             outline: none;
-
         }
     }
 
     button {
         padding: 8px 16px;
-        background: green;
+        background: blue;
         color: white;
         border-radius: 4px;
-        border: 1px solid green;
+        border: 1px solid blue;
     }
 }
