@@ -1,0 +1,57 @@
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background: #aaa8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: overlay 0.3s forwards;
+  z-index: 10;
+}
+
+@keyframes overlay {
+  to {
+    opacity: 1;
+  }
+}
+
+.modal {
+  width: 500px;
+  max-height: 90vh;
+  background: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%) scale(0.8);
+  opacity: 0;
+  border-radius: 20px;
+  padding: 30px;
+  animation: model 0.3s forwards;
+  overflow: auto;
+  z-index: 100;
+
+  &__close {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 30px;
+    color: red;
+    font-size: 24px;
+  }
+}
+
+@keyframes model {
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+.modal input,
+.modal button {
+  width: 100%;
+  height: 40px;
+  margin-top: 16px;
+  border: 1px solid #ddd;
+}

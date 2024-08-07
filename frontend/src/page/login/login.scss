@@ -1,0 +1,40 @@
+.login {
+    display: grid;
+    place-items: center;
+
+    &__form {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        padding: 30px;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+
+        gap: 8px;
+
+        label {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            input {
+                border: 1px solid #ddd;
+                padding: 10px 20px;
+                outline: none;
+                border-radius: 4px;
+
+            }
+        }
+
+        button {
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            background: black;
+            color: white;
+        }
+    }
+}
